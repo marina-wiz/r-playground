@@ -7,7 +7,7 @@ Welcome to r-playground, a collection of various R functions and scripts develop
 ## Content
 
 - **`match_controls()`** – This function performs case-control matching by taking a dataset of cases and matching each case with observations from a dataset of potential controls. You can specify how many controls to match per case and which characteristics to match on (e.g., age, sex). Each control is used only once. If no suitable match is found, "No controls available" is returned.
-- **`group-maps/`** – Generates choropleth maps of racial/ethnic composition and dissimilarity across U.S. metro areas (see its own [README](group-maps/README.md)).
+- **`group-maps/`** – Generates choropleth maps of racial/ethnic composition and dissimilarity across U.S. metro areas (see its own [README](R/group-maps/README.md)).
 
 More scripts may be added over time as the repository evolves.
 
