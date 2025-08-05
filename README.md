@@ -2,11 +2,14 @@
 
 ## Description
 
-Welcome to r-playground, a collection of various R functions and scripts that I’ve developed for data wrangling, statistical analysis, and visualization. This repository serves as a sandbox where I explore new ideas, test different approaches, and store useful snippets that may not fit neatly into any single project.
+Welcome to r-playground, a collection of various R functions and scripts developed for data wrangling, statistical analysis, and visualization. This repository serves as a sandbox where I explore new ideas, test different approaches, and store useful snippets that may not fit neatly into a formal analysis or package.
 
 ## Content
 
-- **`match_controls()`** This function performs case-control matching by taking a dataset of cases and matching each case with observations from a dataset of potential controls. You can specify how many controls should be matched to each case, and on which characteristics (e.g., age, sex) the matching should be based. The function returns the dataset of cases with added columns with the IDs of the matched controls, ensuring that each control is only used once. When there are no matched controls are available for a case, "No controls available" is returned. 
+- **`match_controls()`** – This function performs case-control matching by taking a dataset of cases and matching each case with observations from a dataset of potential controls. You can specify how many controls to match per case and which characteristics to match on (e.g., age, sex). Each control is used only once. If no suitable match is found, "No controls available" is returned.
+- **`group-maps/`** – Generates choropleth maps of racial/ethnic composition and dissimilarity across U.S. metro areas (see its own [README](group-maps/README.md)).
+
+More scripts may be added over time as the repository evolves.
 
 ## Installation
 
@@ -23,7 +26,7 @@ Alternatively, you can download the files directly from the GitHub interface.
 Each script in this repository is self-contained and can be sourced into your R environment as needed. 
 
 ```r
-source("path/to/match_controls.R")
+source("path/to/script.R")
 ```
 
 ## Usage
@@ -53,3 +56,7 @@ matched <- match_controls(study_dat, control_dat,
                           match_cols = c("age", "sex"),
                           id_col = "ID", num_controls = 2)
 ```
+
+
+
+Feel free to explore, adapt, or contribute!
